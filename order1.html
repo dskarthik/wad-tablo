@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Welcome Boss to leaky cauldron</title>
+    <meta name="description" content="Owner login">
+    <!-- Mobile viewport optimized -->
+    <meta name="viewport" content="initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap.min.css" >
+    <link rel="stylesheet" href="bootstrap-theme.min.css">
+    <!--[if lt IE 9]>
+    <script src="html5shiv.js"></script>
+    <script src="respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!--New Fonts-->
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+    <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+    <link href="font-awesome-4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+<body><div class="tab-content">
+                    <div class="tab-pane fade active in" id="tab1">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Enter confirmation" id="inputConfirmationForSearch">
+                            <div class="input-group-btn">
+                                <button class="btn btn-primary" type="submit"><i class="glyphicon glyphicon-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <br>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th>CNF#</th>
+                                <th>Customer Name</th>
+                                <th>Items</th>
+                                <th>Order Status</th>
+                                <th>Table no</th>
+                                <th>Bill Status</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <a href="#myModal1" data-toggle="modal" data-backdrop="static">
+                                    AAAAA89
+                                    </a>
+                                </td>
+                                <td>Jacob</td>
+                                <td>
+                                    <ul>
+                                        <li>pizza</li>
+                                    </ul>
+                                </td>
+                                <td>10 mins</td>
+                                <td>1</td>
+                                <td>yet to pay</td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#myModal1" data-toggle="modal" data-backdrop="static">
+                                    AAAAA89
+                                    </a>
+                                </td>
+                                <td>Peter</td>
+                                <td>
+                                    <ul>
+                                        <li>burger</li>
+                                    </ul>
+                                </td>
+                                <td>0 mins</td>
+                                <td>2</td>
+                                <td>paid</td>
+<!-- 
+coloring
+red-if food is not prepared
+yellow-if food is prepared,bill not paid
+green-bill paided
+-->
+                            </tr>
+                            </tbody>
+                            </table>
+                        <div class="modal fade" id="myModal1">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button class="close" data-dismiss="modal">&times;
+                                        </button>
+                                        <h4 class="modal-title">Details!</h4>
+                                    </div><!-- end modal-header -->
+
+                                    <form class="form-horizontal">
+                                        <div class="modal-body">
+                                            <div class="form-group">
+                                                <label class="col-lg-2 control-label " for="inputConfirmation1">Confirmation code</label>
+                                                <div class="col-lg-10">
+                                                    <input class="form-control" id="inputConfirmation1" placeholder="Confirmation Code" type="text" readonly>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-lg-2 control-label " for="inputName1">Name</label>
+                                                <div class="col-lg-10">
+                                                    <input class="form-control" id="inputName1" placeholder="Name" type="text" readonly>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <span class="col-lg-2 control-label fa fa-mobile-phone fa-2x"></span>
+                                                <label class="col-lg-2 control-label sr-only " for="inputCell1">Mobile Number</label>
+                                                <div class="col-lg-10">
+                                                    <input class="form-control" id="inputCell1" placeholder="(999)-999-9999" type="tel" readonly>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="form-group">
+                                                <span class="col-lg-2 control-label fa fa-calendar fa-2x"></span>
+                                                <label class="col-lg-2 control-label sr-only" for="inputDate1">Date</label>
+                                                <div class="col-lg-10">
+                                                    <input class="form-control" id="inputDate1"  type="date" readonly>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <span class="col-lg-2 control-label fa fa-envelope-o fa-2x"></span>
+                                                <label class="sr-only control-label col-lg-2" for="inputEmail1">Email</label>
+                                                <div class="col-lg-10">
+                                                    <input class="form-control" id="inputEmail1" placeholder="Email" type="email" readonly>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <span class="col-lg-2 control-label fa fa-users fa-2x"></span>
+                                                <label class="col-lg-2 control-label sr-only" for="inputPartySize1">Party Size</label>
+                                                <div class="col-lg-10">
+                                                    <select class="form-control" id="inputPartySize1" disabled="disabled">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                    <option value="8">8</option>
+                                                    <option value="9">9</option>
+                                                    <option value="10">10</option>
+                                                </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <span class="col-lg-2 control-label fa fa-clock-o fa-2x"></span>
+                                                <label class="col-lg-2 control-label sr-only" for="inputTime1">Time</label>
+                                                <div class="col-lg-10">
+                                                    <input class="form-control" id="inputTime1"  type="time" readonly>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-lg-2 control-label">Special requests</label>
+                                                <div class="col-lg-10">
+                                                    <textarea class="form-control" id="inputMessage1" placeholder="Message" rows="3" readonly></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-lg-2 control-label" for="inputTableNumber1">Table number</label>
+                                                <div class="col-lg-10">
+                                                    <select class="form-control" id="inputTableNumber1">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                    <option value="8">8</option>
+                                                    <option value="9">9</option>
+                                                    <option value="10">10</option>
+                                                    <option value="11">11</option>
+                                                    <option value="12">12</option>
+                                                </select>
+                                                </div>
+                                            </div>
+                                        </div><!-- end modal-body -->
+
+                                        <div class="modal-footer" style="text-align: center">
+                                            <button  class="btn btn-success" type="submit">Update!</button>
+                                            <button class="btn btn-danger" data-dismiss="modal" type="button">Close</button>
+                                        </div><!-- end modal-footer -->
+                                    </form>
+                                </div><!-- end modal-content -->
+                            </div><!-- end modal-dialog -->
+                        </div>
+                        </div>
+                        </div>
+</body>
+</html>
