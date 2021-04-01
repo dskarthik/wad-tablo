@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Welcome Boss to leaky cauldron</title>
+    <meta name="description" content="Owner login">
+    <!-- Mobile viewport optimized -->
+    <meta name="viewport" content="initial-scale=1.0">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap.min.css" >
+    <link rel="stylesheet" href="bootstrap-theme.min.css">
+
+    <!--[if lt IE 9]>
+    <script src="html5shiv.js"></script>
+    <script src="respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!--New Fonts-->
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+    <link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+    <link href="font-awesome-4.3.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="container" id="main">
+    <header>
+        <h3 class="tangerine-font-header">Welcome Admin!</h3>
+    </header>
+
+    <section>
+    <div class="row" id="AdminTabs">
+            <div class="tabbable">
+                <ul class="nav nav-tabs nav-justified">
+                    <li class="active headings-tabs "><a href="#tab1" data-toggle="tab">
+                        <span class="fa fa-leanpub"></span>Reservations</a></li>
+                    <li class="headings-tabs"><a href="#tab2"  data-toggle="tab">
+                        <span class="fa fa-table"></span>Layout</a></li>
+                    <li class="headings-tabs"><a href="#tab3" data-toggle="tab">
+                        <span class="fa fa-user "></span>
+                        Profile</a>
+                    </li>
+                    <li class="headings-tabs"><a href="#tab4" data-toggle="tab">
+                        <span class="fa fa-cog"></span>
+                        Settings</a>
+                    </li>
+                    <li class="headings-tabs"><a href="order1.html" data-toggle="tab">
+                        <span class="fa fa-book"></span>Customers</a>
+                    </li>
+                </ul>
+
+                <!--Tab 1 content-->
+                <div class="tab-content">
+                    <div class="tab-pane fade active in" id="tab1">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Enter confirmation" id="inputConfirmationForSearch">
+                            <div class="input-group-btn">
+                                <button class="btn btn-primary" type="submit"><i class="glyphicon glyphicon-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <br>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                            <tr>
+                                <th>CNF#</th>
+                                <th>Customer Name</th>
+                                <th>Date</th>
+                                <th>Status</th>
+                                <th>Table no</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <a href="#myModal1" data-toggle="modal" data-backdrop="static">
+                                    AAAAA89
+                                    </a>
+                                </td>
+                                <td>Jacob</td>
+                                <td>05/10/2014 1:30PM</td>
+                                <td>confirm</td>
+                                <td>1</td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#myModal1" data-toggle="modal" data-backdrop="static">
+                                        AAAAA89
+                                </a>
+                                </td>
+                                <td>Peter</td>
+                                <td>05/10/2014 1:30PM</td>
+                                <td>Confirm</td>
+                                <td>5</td>
+                            </tr>
+                            </tbody>
+                            </table>
+                        <div class="modal fade" id="myModal1">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <button class="close" data-dismiss="modal">&times;
+                                        </button>
+                                        <h4 class="modal-title">Details!</h4>
+                                    </div><!-- end modal-header -->
+
+                                    <form class="form-horizontal">
+                                        <div class="modal-body">
+                                            <div class="form-group">
+                                                <label class="col-lg-2 control-label " for="inputConfirmation1">Confirmation code</label>
+                                                <div class="col-lg-10">
+                                                    <input class="form-control" id="inputConfirmation1" placeholder="Confirmation Code" type="text" readonly>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-lg-2 control-label " for="inputName1">Name</label>
+                                                <div class="col-lg-10">
+                                                    <input class="form-control" id="inputName1" placeholder="Name" type="text" readonly>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <span class="col-lg-2 control-label fa fa-mobile-phone fa-2x"></span>
+                                                <label class="col-lg-2 control-label sr-only " for="inputCell1">Mobile Number</label>
+                                                <div class="col-lg-10">
+                                                    <input class="form-control" id="inputCell1" placeholder="(999)-999-9999" type="tel" readonly>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="form-group">
+                                                <span class="col-lg-2 control-label fa fa-calendar fa-2x"></span>
+                                                <label class="col-lg-2 control-label sr-only" for="inputDate1">Date</label>
+                                                <div class="col-lg-10">
+                                                    <input class="form-control" id="inputDate1"  type="date" readonly>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <span class="col-lg-2 control-label fa fa-envelope-o fa-2x"></span>
+                                                <label class="sr-only control-label col-lg-2" for="inputEmail1">Email</label>
+                                                <div class="col-lg-10">
+                                                    <input class="form-control" id="inputEmail1" placeholder="Email" type="email" readonly>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <span class="col-lg-2 control-label fa fa-users fa-2x"></span>
+                                                <label class="col-lg-2 control-label sr-only" for="inputPartySize1">Party Size</label>
+                                                <div class="col-lg-10">
+                                                    <select class="form-control" id="inputPartySize1" disabled="disabled">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                    <option value="8">8</option>
+                                                    <option value="9">9</option>
+                                                    <option value="10">10</option>
+                                                </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <span class="col-lg-2 control-label fa fa-clock-o fa-2x"></span>
+                                                <label class="col-lg-2 control-label sr-only" for="inputTime1">Time</label>
+                                                <div class="col-lg-10">
+                                                    <input class="form-control" id="inputTime1"  type="time" readonly>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label class="col-lg-2 control-label">Special requests</label>
+                                                <div class="col-lg-10">
+                                                    <textarea class="form-control" id="inputMessage1" placeholder="Message" rows="3" readonly></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label class="col-lg-2 control-label" for="inputTableNumber1">Table number</label>
+                                                <div class="col-lg-10">
+                                                    <select class="form-control" id="inputTableNumber1">
+                                                    <option value="1">1</option>
+                                                    <option value="2">2</option>
+                                                    <option value="3">3</option>
+                                                    <option value="4">4</option>
+                                                    <option value="5">5</option>
+                                                    <option value="6">6</option>
+                                                    <option value="7">7</option>
+                                                    <option value="8">8</option>
+                                                    <option value="9">9</option>
+                                                    <option value="10">10</option>
+                                                    <option value="11">11</option>
+                                                    <option value="12">12</option>
+                                                </select>
+                                                </div>
+                                            </div>
+                                        </div><!-- end modal-body -->
+
+                                        <div class="modal-footer" style="text-align: center">
+                                            <button  class="btn btn-success" type="submit">Update!</button>
+                                            <button class="btn btn-danger" data-dismiss="modal" type="button">Close</button>
+                                        </div><!-- end modal-footer -->
+                                    </form>
+                                </div><!-- end modal-content -->
+                            </div><!-- end modal-dialog -->
+                        </div>
+                        </div>
+                        </div>
+
+
+                <!--Tab 2 content-->
+
+                    <div class="tab-pane fade" id="tab2">
+                        <div class="row">
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="inputDateForSearch">
+                                <div class="input-group-btn">
+                                    <button class="btn btn-primary" type="submit"><i class="glyphicon glyphicon-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+
+                        <!--Layout for the tables-->
+                        <div class="row" id="layout">
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+                                Table1
+                                <a href="#myModal2" role="button" class="btn btn-danger  btn-block" data-backdrop="static" data-toggle="modal">
+                                    AA39875
+                                </a>
+                            </div>
+
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+                                Table2
+                                <a href="#myModal2" role="button" class="btn btn-danger btn-block" data-backdrop="static" data-toggle="modal">
+                                    AA39875
+                                </a>
+                            </div>
+
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+                                Table3
+                                <a href="#myModal2" role="button" class="btn btn-danger btn-block" data-backdrop="static" data-toggle="modal">AA39875</a>
+                            </div>
+
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+                                Table4
+                                <a href="#myModal2" role="button" class="btn btn-danger btn-block" data-backdrop="static" data-toggle="modal">
+                                    AA39877
+                                </a>
+                            </div>
+
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+                                Table5
+                                <a href="#myModal2" role="button" class="btn btn-success btn-is-disabled btn-block" data-backdrop="static" data-toggle="modal">
+                                    Available
+                                </a>
+                            </div>
+
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+                                Table6
+                                <a href="#myModal2" role="button" class="btn btn-success btn-is-disabled btn-block" data-backdrop="static" data-toggle="modal">
+                                Available
+                                </a>
+                            </div>
+
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+                                Table7
+                                <a href="#myModal2" role="button" class="btn btn-success btn-is-disabled btn-block" data-backdrop="static" data-toggle="modal">
+                                    Available
+                                </a>
+                            </div>
+
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+                                Table8
+                                <a href="#myModal2" role="button" class="btn btn-success btn-is-disabled btn-block" data-backdrop="static" data-toggle="modal">
+                                    Available
+                                </a>
+                            </div>
+
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+                                Table9
+                                <a href="#myModal2" role="button" class="btn btn-success btn-is-disabled btn-block" data-backdrop="static" data-toggle="modal">
+                                    Available
+                                </a>
+                            </div>
+
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+                                Table10
+                                <a href="#myModal2" role="button" class="btn btn-success btn-is-disabled btn-block" data-backdrop="static" data-toggle="modal">
+                                    Available
+                                </a>
+                            </div>
+
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+                                Table 11
+                                <a href="#myModal2" role="button" class="btn btn-success btn-is-disabled btn-block" data-backdrop="static" data-toggle="modal">
+                                    Available
+                                </a>
+                            </div>
+
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+                                Table12
+                                <a href="#myModal2" role="button" class="btn btn-success btn-is-disabled btn-block" data-backdrop="static" data-toggle="modal">
+                                    Available
+                                </a>
+                            </div>
+                        </div>
+                            <!--Modal that appears when "occupied tables" are clicked-->
+                            <div class="modal fade" id="myModal2">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button class="close" data-dismiss="modal">&times;
+                                            </button>
+                                            <h4 class="modal-title">Details!</h4>
+                                        </div><!-- end modal-header -->
+
+                                        <form class="form-horizontal">
+                                            <div class="modal-body">
+                                                <div class="form-group">
+                                                    <label class="col-lg-2 control-label " for="inputConfirmation2">Confirmation code</label>
+                                                    <div class="col-lg-10">
+                                                        <input class="form-control" id="inputConfirmation2" placeholder="Confirmation Code" type="text" readonly>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-lg-2 control-label " for="inputName2">Name</label>
+                                                    <div class="col-lg-10">
+                                                        <input class="form-control" id="inputName2" placeholder="Name" type="text" readonly>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <span class="col-lg-2 control-label fa fa-mobile-phone fa-2x"></span>
+                                                    <label class="col-lg-2 control-label sr-only ">Mobile Number</label>
+                                                    <div class="col-lg-10">
+                                                        <input class="form-control" id="inputCell2" placeholder="(999)-999-9999" type="tel" readonly>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="form-group">
+                                                    <span class="col-lg-2 control-label fa fa-calendar fa-2x"></span>
+                                                    <label class="col-lg-2 control-label sr-only" for="inputDate2">Date</label>
+                                                    <div class="col-lg-10">
+                                                        <input class="form-control" id="inputDate2"  type="date" readonly>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <span class="col-lg-2 control-label fa fa-envelope-o fa-2x"></span>
+                                                    <label class="sr-only control-label col-lg-2" for="inputEmail2">Email</label>
+                                                    <div class="col-lg-10">
+                                                        <input class="form-control" id="inputEmail2" placeholder="Email" type="email" readonly>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <span class="col-lg-2 control-label fa fa-users fa-2x"></span>
+                                                    <label class="col-lg-2 control-label sr-only" for="partySize2">Party Size</label>
+                                                    <div class="col-lg-10">
+                                                        <input class="form-control" id="partySize2" placeholder="Partysize" type="number" readonly>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <span class="col-lg-2 control-label fa fa-clock-o fa-2x"></span>
+                                                    <label class="col-lg-2 control-label sr-only" for="inputTime2">Time</label>
+                                                    <div class="col-lg-10">
+                                                        <input class="form-control" id="inputTime2" type="time" readonly>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label class="col-lg-2 control-label" for="inputMessage2">Special requests</label>
+                                                    <div class="col-lg-10">
+                                                        <textarea class="form-control" id="inputMessage2" placeholder="Message" rows="3" readonly></textarea>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <label class="col-lg-2 control-label" for="inputTable2">Table number</label>
+                                                    <div class="col-lg-10">
+                                                        <select class="form-control" id="inputTable2" disabled="disabled">
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">5</option>
+                                                            <option value="6">6</option>
+                                                            <option value="7">7</option>
+                                                            <option value="8">8</option>
+                                                            <option value="9">9</option>
+                                                            <option value="10">10</option>
+                                                            <option value="11">11</option>
+                                                            <option value="12">12</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div><!-- end modal-body -->
+
+                                            <div class="modal-footer" style="text-align: center">
+                                                <button class="btn btn-danger" data-dismiss="modal" type="button">Close</button>
+                                            </div><!-- end modal-footer -->
+                                        </form>
+                                    </div><!-- end modal-content -->
+                                </div><!-- end modal-dialog -->
+                            </div>
+                    </div>
+
+
+                <!--Tab 3 content-->
+                    <div class="tab-pane fade" id="tab3">
+                        <header><h4>Login Details</h4></header>
+                        <form class="form-horizontal" >
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="email">Email:</label>
+                                <div class="col-sm-10">
+                                    <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="pwdOld">Old Password:</label>
+                                <div class="col-sm-10">
+                                    <input type="password" class="form-control" id="pwdOld" placeholder="Enter password" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="pwdNew">New Password:</label>
+                                <div class="col-sm-10">
+                                    <input type="password" class="form-control" id="pwdNew" placeholder="Enter password" required >
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="pwdNewAgain">Confirm Password:</label>
+                                <div class="col-sm-10">
+                                    <input type="password" class="form-control" id="pwdNewAgain" placeholder="Enter password" required>
+                                </div>
+                            </div>
+
+                          <hr>
+                            <div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-10">
+                                    <button type="submit" class="btn btn-success">Submit</button>
+                                    <button  type="reset" class="btn btn-danger">Reset</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!--Content for tab4-->
+                    <div class="tab-pane fade" id="tab4">
+                        <form class="form-horizontal" >
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="restaurantName">Restaurant Name:</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="restaurantName" placeholder="Enter Name">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="restaurantTiming">Timings:</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="restaurantTiming" placeholder="Enter Time">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-2" for="restaurantEmail">Email:</label>
+                                <div class="col-sm-10">
+                                    <input type="email" class="form-control" id="restaurantEmail" placeholder="Enter Email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label col-sm-2">Auto assign:</label>
+                                <label class="radio-inline ">
+                                    <input type="radio"  name="autoAssign" value="yes">Yes
+                                </label>
+                                <label class="radio-inline ">
+                                    <input type="radio"  name="autoAssign"  checked="checked" value="no">No
+                                </label>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-10">
+                                    <button type="submit" class="btn btn-success ">Update</button>
+                                    <button  type="reset" class="btn btn-danger ">Reset</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!--content for tab5-->
+                    <div class="tab-pane fade" id="tab5">
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                <tr>
+                                    <th>Customer Name</th>
+                                    <th>Number</th>
+                                    <th>Email</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>Jacob</td>
+                                    <td>(345)-567-8905</td>
+                                    <td>example@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td>Peter</td>
+                                    <td>(123)-444-4444</td>
+                                    <td>example2@gmail.com</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    </div>
+
+
+<script src="bootstrap/js/jquery-1.11.3.min.js"></script>
+
+<!-- Bootstrap JS -->
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+</html>
